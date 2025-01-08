@@ -1,0 +1,8 @@
+$Centra: ("Book" 400), ("Medium" 500), ("Bold" 700);
+@each $name, $weight in $Centra {
+  @font-face {
+    font-family: "Montserrat";
+    src: url("@/assets/fonts/CentraNo2-#{$name}.ttf");
+    font-weight: $weight;
+  }
+}
